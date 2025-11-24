@@ -44,16 +44,14 @@ app.post("/sendMail", async (req, res) => {
       to: process.env.RECEIVER_EMAIL,
       subject: `New Inquiry from ${firstName} ${lastName}`,
       text: `
-Company: ${company}
-Name: ${firstName} ${lastName}
-Designation: ${designation}
-Email: ${email}
-Phone: ${phone}
-Address: ${address}
-State: ${state}
-
-Requirement:
-${requirement}
+          Company:    ${company}
+          Name:       ${firstName} ${lastName}
+          Designation:${designation}
+          Email:      ${email}
+          Phone:      ${phone}
+          Address:    ${address}
+          State:      ${state}
+          Requirement: ${requirement}
       `,
     };
 
@@ -98,27 +96,27 @@ app.post("/sendComplaint", upload.array("files", 5), async (req, res) => {
 
     // Email that YOU will receive
     const mailOptions = {
-      from: email || process.env.EMAIL_USER,
+      from: email,
       to: process.env.RECEIVER_EMAIL,
       subject: `New Complaint Received - ${subject}`,
       text: `
        Customer Complaint Details
 
-       Customer Name: ${customerName}
-       Contact No:</strong> ${contactNo}
-       Contact Person: ${contactPerson}
-       Operational Duration: ${operationalDuration}
-       Site Address: ${siteAddress}
-       Date of Installation: ${installationDate}
-       OEM/Dealer/End User: ${oemType}
-       Product Description: ${productDescription}
-       Complaint: ${complaint}
-       Email: ${email}
-       Alternative Email: ${altEmail}
-       Serial No: ${serialNo}
-       State: ${state}
-       Pin Code: ${pinCode}
-       Quantity: ${quantity}
+       Customer Name:         ${customerName}
+       Contact No:            ${contactNo}
+       Contact Person:        ${contactPerson}
+       Operational Duration:  ${operationalDuration}
+       Site Address:          ${siteAddress}
+       Date of Installation:  ${installationDate}
+       OEM/Dealer/End User:   ${oemType}
+       Product Description:   ${productDescription}
+       Complaint:             ${complaint}
+       Email:                 ${email}
+       Alternative Email:     ${altEmail}
+       Serial No:             ${serialNo}
+       State:                 ${state}
+       Pin Code:              ${pinCode}
+       Quantity:              ${quantity}
       `,
       attachments,
     };
