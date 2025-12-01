@@ -20,107 +20,124 @@
     <!-- ⭐⭐ ADVANCED SEO SCHEMA ⭐⭐ -->
 
     <!-- 🔵 1. Local Business Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Industrial Sales & Services",
-      "image": "https://i-s-s.vercel.app/assets/logo.png",
-      "url": "https://i-s-s.vercel.app/",
-      "telephone": "+91-9833158663",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "001,Bld.06,Padmavatiestate near Bhav recidency, Datt mandil,Before Kasheli  toll naka Bhivandi 421302",
-        "addressLocality": "Thane",
-        "addressRegion": "Maharashtra",
-        "postalCode": "421302",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 19.2349,
-        "longitude": 73.0133
-      },
-      "openingHours": "Mo-Sa 09:00-19:00",
-      "priceRange": "₹₹",
-      "description": "We provide industrial machinery, motors, gearbox, gearbox repair, gear motor servicing, and industrial equipment."
-    }
-    </script>
+   <!-- ✅ FIXED + OPTIMIZED SEO SCHEMA FOR INDUSTRIAL SALES & SERVICES -->
 
-    <!-- 🔵 2. Website Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Industrial Sales & Services",
-      "url": "https://i-s-s.vercel.app/",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://i-s-s.vercel.app/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-    </script>
+<!-- 🔵 1. Local Business Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Industrial Sales & Services",
+  "url": "https://i-s-s.vercel.app/",
+  "image": "https://i-s-s.vercel.app/logo.png",
+  "telephone": "+91-9833158663",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "001, Bld.06, Padmavati Estate, Near Bhav Residency, Datt Mandir, Before Kasheli Toll Naka, Bhiwandi",
+    "addressLocality": "Thane",
+    "addressRegion": "Maharashtra",
+    "postalCode": "421302",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 19.2349,
+    "longitude": 73.0133
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "09:00",
+    "closes": "19:00"
+  }],
+  "priceRange": "₹₹",
+  "description": "We provide industrial machinery, gearbox repair, gear motor servicing, and industrial equipment.",
+  "sameAs": [
+    "https://facebook.com/",
+    "https://instagram.com/",
+    "https://www.google.com/maps"
+  ]
+}
+</script>
 
-    <!-- 🔵 3. Breadcrumb Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://i-s-s.vercel.app/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "About",
-          "item": "https://i-s-s.vercel.app/about"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Why Choose Us",
-          "item": "https://i-s-s.vercel.app/why-choose"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Contact",
-          "item": "https://i-s-s.vercel.app/contact"
-        }
-      ]
-    }
-    </script>
+<!-- 🔵 2. Website Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Industrial Sales & Services",
+  "url": "https://i-s-s.vercel.app/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://i-s-s.vercel.app/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 
-    <!-- 🔵 4. Service Schema -->
-    <script type="application/ld+json">
+<!-- 🔵 3. Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "serviceType": "Industrial Machinery Repair & Gearbox Services",
-      "provider": {
-        "@type": "LocalBusiness",
-        "name": "Industrial Sales & Services",
-        "url": "https://i-s-s.vercel.app/"
-      },
-      "areaServed": {
-        "@type": "Place",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Thane",
-          "addressRegion": "Maharashtra",
-          "addressCountry": "IN"
-        }
-      },
-      "description": "We provide gearbox repair, motor servicing, industrial machinery repair, and industrial product sales."
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://i-s-s.vercel.app/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "About",
+      "item": "https://i-s-s.vercel.app/about"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Why Choose Us",
+      "item": "https://i-s-s.vercel.app/why-choose"
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "name": "Contact",
+      "item": "https://i-s-s.vercel.app/contact"
     }
-    </script>
+  ]
+}
+</script>
 
-    <!-- ⭐⭐ END OF SEO SCHEMA ⭐⭐ -->
+<!-- 🔵 4. Service Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Industrial Machinery Repair & Gearbox Services",
+  "provider": {
+    "@type": "LocalBusiness",
+    "name": "Industrial Sales & Services",
+    "url": "https://i-s-s.vercel.app/"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Thane",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    }
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "Contact for Quote",
+    "priceCurrency": "INR",
+    "availability": "https://schema.org/InStock"
+  },
+  "description": "We provide gearbox repair, motor servicing, industrial machinery repair, and industrial product sales."
+}
+</script>
 
     <link
     rel="stylesheet"
