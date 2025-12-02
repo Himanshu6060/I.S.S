@@ -31,7 +31,10 @@ function App() {
                     name="description"
                     content="Industrial Sales & Services provides high-quality industrial equipment, iss, repair gear motors and provide good services."
                   />
-                  <meta name="keywords" content="industrial services, industrial sales, machinery repair, gearmotor, gearbox, gear services" />
+                  <meta
+                    name="keywords"
+                    content="industrial services, industrial sales, machinery repair, gearmotor, gearbox, gear services"
+                  />
                 </Helmet>
 
                 <Hero />
@@ -60,7 +63,41 @@ function App() {
             }
           />
 
-          {/* WHY CHOOSE US */}
+          {/* PRODUCTS PAGE */}
+          <Route
+            path="/products"
+            element={
+              <>
+                <Helmet>
+                  <title>Our Products | Industrial Sales & Services</title>
+                  <meta
+                    name="description"
+                    content="Explore our wide range of industrial products, machinery, motors, and equipment."
+                  />
+                </Helmet>
+                <Products />
+              </>
+            }
+          />
+
+          {/* SERVICES PAGE */}
+          <Route
+            path="/services"
+            element={
+              <>
+                <Helmet>
+                  <title>Our Services | Industrial Sales & Services</title>
+                  <meta
+                    name="description"
+                    content="Discover professional industrial services including repair, maintenance, gearbox solutions, and machinery support."
+                  />
+                </Helmet>
+                <Services />
+              </>
+            }
+          />
+
+          {/* WHY CHOOSE US PAGE */}
           <Route
             path="/why-choose"
             element={
@@ -93,7 +130,6 @@ function App() {
               </>
             }
           />
-
         </Routes>
 
         <Footer />
